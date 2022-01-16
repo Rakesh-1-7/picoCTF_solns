@@ -1,0 +1,7 @@
+Incase rot13 isn't installed on your kali machine, it will automatically prompt you to install the software.Just enter your Kali password and just press 'y'y when prompted to do so.
+
+┌──(kali㉿kali)-[~]
+└─$ rot13                                                                                                                2 ⨯
+cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}
+picoCTF{next_time_I'll_try_2_rounds_of_rot13_TLcKBUdK}
+^C
