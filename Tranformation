@@ -1,0 +1,32 @@
+flag = "灩 捯 䍔 䙻 ㄶ 形 楴 獟 楮 獴 ㌴ 摟 潦 弸 弲 㘶 㠴 挲 ぽ".split()
+
+ans = ""
+
+# print(ord(flag[0]) >> 8)
+# print(ord(flag[0]) )
+pos = 1
+# print(int('10010101',2))
+for i in flag:
+	key = bin(ord(i))[2:]
+	if len(key) < 15:
+		# print(int(key[:6],2),int(key[6:],2)," : " ,pos)
+		# print(chr(int(key[:6],2)),int(key[6:],2))
+		ans += chr(int(key[:6],2)) + chr(int(key[6:],2))
+	else:
+		ans += chr(int(key[:7],2)) + chr(int(key[7:],2))
+
+	pos+=2
+print("Encoded string : 灩 捯 䍔 䙻 ㄶ 形 楴 獟 楮 獴 ㌴ 摟 潦 弸 弲 㘶 㠴 挲 ぽ")
+print("Decoded string : " + ans)
+# print(len(ans))
+
+# print(flag)
+# flag = ["p","i","c","o","C","T","F","{"]
+# x = ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
+# print(x)
+
+# chr((ord(flag[i]) << 8) + ord(flag[i + 1])
+
+# print(chr(ord('a') << 8) )
+# print(2 << 2)
